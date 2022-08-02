@@ -8,4 +8,7 @@ fig, ax =plt.subplots(figsize=(4,4))
 ax.plot(s, 1-s, color = "#1f77b4ff")
 ax.plot(s, s/(0.1 + s), color = "#ff0000ff")
 ax.grid()
+ax.set_ylabel('Rate')
+
+ax.set_xlabel('[NSC]')
 plt.show()

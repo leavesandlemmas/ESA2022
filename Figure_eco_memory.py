@@ -16,7 +16,7 @@ dens= 2
 tmax = 7
 t0 = 2.5
 ite = 10
-slow = 0.5
+slow = 0.2
 U = 7
 
 s = np.linspace(0.,0.2,201)
@@ -45,7 +45,8 @@ fig, ax = plt.subplots(2,1, sharex=True)
 
 ax[0].plot(t, slow * A(t), color = 'green')
 
-ax[1].streamplot(T, S, Vt, Vs, density =dens)   
+ax[1].streamplot(T, S, Vt, Vs, density =dens)
 ax[1].plot(t, ncl)
 ax[1].plot(t, sol.y[0], color = 'k')
 ax[1].set_ylim(s[0],s[-1])
+plt.show()

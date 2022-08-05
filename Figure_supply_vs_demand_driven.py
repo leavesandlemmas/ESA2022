@@ -29,13 +29,13 @@ Vt = np.ones_like(T)
 
 def fn(t, s):
     return At(t)*(1 - s) - U * s
-    
+
 def At(t):
-   u = 0.7 - np.cos(2*np.pi*t) 
+   u = 0.7 - np.cos(2*np.pi*t)
    return np.clip(0.5*u,0,10)
 
 def Ut(t):
-   u =  - np.cos(2*np.pi*t) 
+   u =  - np.cos(2*np.pi*t)
    return 10*np.exp(u)
 
 def gn(t,s):
@@ -49,9 +49,9 @@ ncl = At(t)/(At(t) + U)
 sol = solve_ivp(fn, [-tmax,tmax], [ncl[0]], t_eval=t)
 
 fig, ax =plt.subplots(2,1,sharey=True)
-#ax[0].streamplot(T, S, Vt, Vs)
-ax[0].plot(d, ncl)
-ax[0].plot(d, sol.y[0],color='k')
+ax[0].streamplot(T, S, Vt, Vs)
+ax[0].plot(t, ncl)
+ax[0].plot(t, sol.y[0],color='k')
 
 
 Vs = gn(T,S)
@@ -59,8 +59,10 @@ ncl = A/(A + Ut(t))
 sol = solve_ivp(gn, [-tmax,tmax], [ncl[0]], t_eval=t)
 
 
-#ax[1].streamplot(T,S,Vt, Vs)
-ax[1].plot(d, ncl)
-ax[1].plot(d, sol.y[0],color='k')
+ax[1].streamplot(T,S,Vt, Vs)
+ax[1].plot(t, ncl)
+ax[1].plot(t, sol.y[0],color='k')
 
 ax[1].set_ylim(s[0]-0.01,s[-1])
+
+plt.show()

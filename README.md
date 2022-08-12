@@ -1,9 +1,27 @@
 # READ ME
 
-This github repository contains materials for a talk given Ecological Society of America's annual meeting 2022 in Montreal, QC. 
+This github repository contains materials for a talk given at the Ecological Society of America's annual meeting 2022 in Montreal, QC. The title (as given on the program), author list, and abstract are copied below. The main repository contains the slides accompanying the talk as well as a script. The folders contain several extra images and code to reproduce them. The abstract is given in both French and English in that order below. 
 
-> Impact of the regulation of non-structural carbohydrate dynamics for ecosystem climate responses: biological insights from mathematical analysis
+Ce repositoire Github contient des matériaux pour une présentation donnée à la réunion annuelle 2022 d'Ecological Society of America à Montréal, QC. Le titre (celui du programme), la liste des auteurs,  et le résumé sont copiés ci-dessous. Le repositoire principal contient les visuels qui accompagnent la présentation ainsi que le script. Les dossiers contiennent plusieurs images supplémentaires et du code pour les réproduire. Le résumé est pourvu en français et en anglais dans cet ordre ci-dessous.   
+ 
 
+## Title (on program)
+
+Impact of the regulation of non-structural carbohydrate dynamics for ecosystem climate responses: biological insights from mathematical analysis
+
+## Authors
+
+1. Scott W. Oswald (presentor), UGA, WARNELL, SREL, ORNL
+2. Doug P. Aubrey, UGA, WARNELL, SREL
+3. Dan M. Ricciuto, ORNL
+4. Jeff M. Warren, ORNL
+
+### Affliations
+
++ UGA : University of Georgia
++ WARNELL  : Warnell School of Forestry at UGA
++ SREL : Savannah River Ecology Lab at Department of Energy's Savannah River Site (SRS), managed by UGA
++ ORNL : Oak Ridge National Laboratory
 
 
 ## Résumé

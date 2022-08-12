@@ -26,6 +26,12 @@ rain_drops = np.zeros(n_drops, dtype=[('position', float, (2,)),
                                       ('growth',   float),
                                       ('color',    float, (4,))])
 
+
+nparticles = 1000
+particles = np.zeros(nparticles, dtype = [('position', float, (2,))])
+
+
+
 # Initialize the raindrops in random positions and with
 # random growth rates.
 rain_drops['position'] = np.random.uniform(0, 1, (n_drops, 2))
